@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mfikCZEe3GM0PcxOII0istjoOooB3SBvP090GYMiXjY=",
+  "Source": "skview_kepware_influx_service",
+  "BasePath": "_content/skview_kepware_influx_service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
