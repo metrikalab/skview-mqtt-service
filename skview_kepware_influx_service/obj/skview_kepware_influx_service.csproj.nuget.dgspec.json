@@ -41,6 +41,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "InfluxDB.Client": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "InfluxData.Net": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "MQTTnet": {
+              "target": "Package",
+              "version": "[4.2.1.781, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

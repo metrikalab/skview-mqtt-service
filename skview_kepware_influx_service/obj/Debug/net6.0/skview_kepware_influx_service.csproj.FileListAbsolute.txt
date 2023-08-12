@@ -58,3 +58,4 @@ C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_
 C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.pdb
 C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.genruntimeconfig.cache
 C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\ref\skview_kepware_influx_service.dll
+C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\MQTTnet.dll
