@@ -1,0 +1,11 @@
+{
+  "timestamp": "2023-08-11T18:50:28.316-06:00",
+  "values": [
+    {
+      "id": "Simulador.Device1.AleatorioTest",
+      "v": 1243,
+      "q": true,
+      "t": 1691801428082
+    }
+  ]
+}

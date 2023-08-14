@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\skview_kepware_influx_service.props" />
+</Project>
