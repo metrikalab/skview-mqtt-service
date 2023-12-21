@@ -1,61 +1,121 @@
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.csproj.AssemblyReference.cache
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.AssemblyInfoInputs.cache
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.AssemblyInfo.cs
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.csproj.CoreCompileInputs.cache
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\appsettings.json
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\skview_kepware_influx_service.exe
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\skview_kepware_influx_service.deps.json
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\skview_kepware_influx_service.runtimeconfig.json
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\skview_kepware_influx_service.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\skview_kepware_influx_service.pdb
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\CsvHelper.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\InfluxData.Net.Common.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\InfluxData.Net.InfluxDb.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\InfluxData.Net.Kapacitor.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\InfluxData.Net.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\InfluxDB.Client.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\InfluxDB.Client.Core.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\JsonSubTypes.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\Microsoft.Extensions.ObjectPool.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\NodaTime.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\NodaTime.Serialization.JsonNet.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\RestSharp.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\System.Drawing.Common.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\System.Reactive.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\System.Security.Permissions.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\System.Text.Encodings.Web.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\System.Text.Json.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\System.Windows.Extensions.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\staticwebassets\msbuild.skview_kepware_influx_service.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\staticwebassets\msbuild.build.skview_kepware_influx_service.props
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.skview_kepware_influx_service.props
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.skview_kepware_influx_service.props
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\scopedcss\bundle\skview_kepware_influx_service.styles.css
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.csproj.CopyComplete
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\refint\skview_kepware_influx_service.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.pdb
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\skview_kepware_influx_service.genruntimeconfig.cache
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\obj\Debug\net6.0\ref\skview_kepware_influx_service.dll
-C:\Users\Imimex-D15-QRO\Documents\Proyectos IMIMEX\skview_kepware_influx\skview_kepware_influx_service\bin\Debug\net6.0\MQTTnet.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.csproj.AssemblyReference.cache
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.AssemblyInfoInputs.cache
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.AssemblyInfo.cs
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.csproj.CoreCompileInputs.cache
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/appsettings.Development.json
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/appsettings.json
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.exe
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.deps.json
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.runtimeconfig.json
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.pdb
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/CsvHelper.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/InfluxData.Net.Common.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/InfluxData.Net.InfluxDb.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/InfluxData.Net.Kapacitor.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/InfluxData.Net.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/InfluxDB.Client.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/InfluxDB.Client.Core.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/JsonSubTypes.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/Microsoft.Extensions.ObjectPool.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/NodaTime.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/NodaTime.Serialization.JsonNet.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/RestSharp.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/System.Drawing.Common.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/System.Reactive.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/System.Security.Permissions.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/System.Text.Json.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/System.Windows.Extensions.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets/msbuild.skview_kepware_influx_service.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets/msbuild.build.skview_kepware_influx_service.props
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.skview_kepware_influx_service.props
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.skview_kepware_influx_service.props
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets.pack.json
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets.build.json
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets.development.json
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/scopedcss/bundle/skview_kepware_influx_service.styles.css
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.csproj.CopyComplete
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/refint/skview_kepware_influx_service.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.pdb
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.genruntimeconfig.cache
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/obj/Debug/net6.0/ref/skview_kepware_influx_service.dll
+C:/Users/Imimex-D15-QRO/Documents/Proyectos IMIMEX/skview_kepware_influx/skview_kepware_influx_service/bin/Debug/net6.0/MQTTnet.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/appsettings.json
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.deps.json
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.runtimeconfig.json
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/skview_kepware_influx_service.pdb
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/CsvHelper.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/InfluxData.Net.Common.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/InfluxData.Net.InfluxDb.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/InfluxData.Net.Kapacitor.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/InfluxData.Net.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/InfluxDB.Client.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/InfluxDB.Client.Core.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/JsonSubTypes.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/Microsoft.Extensions.ObjectPool.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/MQTTnet.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/NodaTime.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/NodaTime.Serialization.JsonNet.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/RestSharp.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/System.Drawing.Common.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/System.Reactive.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/System.Text.Json.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/System.Windows.Extensions.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.csproj.AssemblyReference.cache
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.AssemblyInfoInputs.cache
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.AssemblyInfo.cs
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.csproj.CoreCompileInputs.cache
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.MvcApplicationPartsAssemblyInfo.cs
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.MvcApplicationPartsAssemblyInfo.cache
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets/msbuild.skview_kepware_influx_service.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets/msbuild.build.skview_kepware_influx_service.props
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.skview_kepware_influx_service.props
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.skview_kepware_influx_service.props
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets.build.json
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/staticwebassets.development.json
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/scopedcss/bundle/skview_kepware_influx_service.styles.css
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.csproj.CopyComplete
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/refint/skview_kepware_influx_service.dll
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.pdb
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/skview_kepware_influx_service.genruntimeconfig.cache
+/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/Debug/net6.0/ref/skview_kepware_influx_service.dll

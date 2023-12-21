@@ -22,7 +22,6 @@
 
     <ItemGroup>
       <Folder Include="Data\" />
-      <Folder Include="Dtos\" />
       <Folder Include="MqttFiles\Files\" />
       <Folder Include="Repositories\" />
     </ItemGroup>

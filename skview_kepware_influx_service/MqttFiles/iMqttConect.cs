@@ -8,6 +8,6 @@ namespace skview_kepware_influx_service.MqttFiles
 {
     public interface iMqttConect
     {
-        public Task Connect(string Test1);
+        public Task StartOperation();
     }
 }
