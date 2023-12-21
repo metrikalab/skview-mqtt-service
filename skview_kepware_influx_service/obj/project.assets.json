@@ -4292,27 +4292,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Imimex-D15-QRO\\.nuget\\packages\\": {}
+    "/Users/cmnb32/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Imimex-D15-QRO\\Documents\\Proyectos IMIMEX\\skview_kepware_influx\\skview_kepware_influx_service\\skview_kepware_influx_service.csproj",
+      "projectUniqueName": "/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/skview_kepware_influx_service.csproj",
       "projectName": "skview_kepware_influx_service",
-      "projectPath": "C:\\Users\\Imimex-D15-QRO\\Documents\\Proyectos IMIMEX\\skview_kepware_influx\\skview_kepware_influx_service\\skview_kepware_influx_service.csproj",
-      "packagesPath": "C:\\Users\\Imimex-D15-QRO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Imimex-D15-QRO\\Documents\\Proyectos IMIMEX\\skview_kepware_influx\\skview_kepware_influx_service\\obj\\",
+      "projectPath": "/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/skview_kepware_influx_service.csproj",
+      "packagesPath": "/Users/cmnb32/.nuget/packages/",
+      "outputPath": "/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Imimex-D15-QRO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/cmnb32/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4367,7 +4364,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }
