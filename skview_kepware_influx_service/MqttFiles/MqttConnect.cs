@@ -1,4 +1,6 @@
-﻿using MQTTnet;
+﻿using System.Collections;
+using System.Globalization;
+using MQTTnet;
 using MQTTnet.Client;
 using Newtonsoft.Json;
 using System.Text;
@@ -23,76 +25,99 @@ namespace skview_kepware_influx_service.MqttFiles
       double operacionLoteValue = 0;
       double autotanqueLoteValue = 0;
       bool canStartOperation = false;
+      string operationId = "";
       using var mqttClient = mqttFactory.CreateMqttClient();
       var mqttClientOptions = new MqttClientOptionsBuilder().WithTcpServer(_configuration["MqttServerIp"], 1883)
         .WithProtocolVersion(MqttProtocolVersion.V500).Build();
 
       mqttClient.DisconnectedAsync += async e =>
       {
+        //TODO: Qué hacer en caso de desconexión
         Console.WriteLine("Disconnected from MQTT broker.");
-        // Aquí puedes añadir lógica para manejar la reconexión o registrar el evento.
-        // Por ejemplo, puedes intentar reconectar aquí o establecer una bandera para manejar la reconexión en otro lugar del código.
       };
       
       mqttClient.ApplicationMessageReceivedAsync += async e =>
       {
         Console.WriteLine("Received application message.");
-        var msgFromMQttBroker = Encoding.UTF8.GetString(e.ApplicationMessage.PayloadSegment);
-        var mqttResponse = JsonConvert.DeserializeObject<MqttResponse>(msgFromMQttBroker) ?? throw new InvalidOperationException();
+        var messageFromMqttBroker = Encoding.UTF8.GetString(e.ApplicationMessage.PayloadSegment);
+        var messageObjectFromMqttBroker = JsonConvert.DeserializeObject<MqttResponse>(messageFromMqttBroker) ?? throw new InvalidOperationException();
 
-        foreach (var item in mqttResponse.Values)
-        {
-          if (item is { Id: "ASFALTO.UCL31.BANDERA.OPERACION_LOTE", V: < 1000000 and > 0 })
+        if (messageObjectFromMqttBroker.Values != null)
+          foreach (var measureValues in messageObjectFromMqttBroker.Values)
           {
-            Console.WriteLine(item.V);
-            operacionLoteValue = (double)item.V;
-            Console.WriteLine("Se puede iniciar una operación");
-            await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.DISPLAY", 2);
-            Thread.Sleep(1000);
-            await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 28);
-            canStartOperation = true;
-          }
-
-          if (item is { Id: "ASFALTO.UCL31.BANDERA.AUTOTANQUE_LOTE", V: < 100000 and > 0 } && canStartOperation )
-          {
-            Console.WriteLine($"OperacionLote: {operacionLoteValue}");
-            Console.WriteLine($"AutotanqueLote: {item.V}");
-            //TODO: Validar con la base de datos que estos valores existan
-              
-            await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 5);
-            Thread.Sleep(1000);
-            await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.RECETA_W", 1);
-            Thread.Sleep(1000);
-            await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 6);
-            Thread.Sleep(1000);
-            await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 10);
-            Thread.Sleep(1000);
-            await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.PRESET_ESCR", 9999);
-            Thread.Sleep(1000);
-            await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 10);
-          }
-          
-          if (item.Id == "ASFALTO.UCL31.BANDERA.ESTATUS_LOTE_INST" && canStartOperation)
-          {
-            Console.WriteLine($"Debería ser 13: {item.V}");
-            if (item.V is 13)
+            //Escucha el tag OPERACION_LOTE y este debe ser valido. Permite iniciar operación
+            if (measureValues is { Id: "ASFALTO.UCL31.BANDERA.OPERACION_LOTE", V: < 1000000 and > 0 })
             {
-              GetDataRestDataFromUcl();
-              // PostDataToDatabase(dataToInsert);
-              //TODO: Escribir datos actuales (tal vez requiera rest)
+              // Console.WriteLine(measureValues.V);
+              operacionLoteValue = (double)measureValues.V;
+              Console.WriteLine("Se puede iniciar una operación");
+              await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.DISPLAY", 2);
+              Thread.Sleep(1000);
+              await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 28);
+              canStartOperation = true;
+            }
+            
+            //Escucha el tag de AUTOTANQUE_LOTE para recibir el numero del autotanque. Este debe ser valido para iniciar la operacion de descarga.
+            if (measureValues is { Id: "ASFALTO.UCL31.BANDERA.AUTOTANQUE_LOTE", V: < 1000000 and > 0 } && canStartOperation)
+            {
+              Console.WriteLine($"OperacionLote: {operacionLoteValue}");
+              Console.WriteLine($"AutotanqueLote: {measureValues.V}");
+              var operationDataFromDatabase =
+                await ValidateIfOperationExistsInDatabase(operacionLoteValue.ToString(CultureInfo.InvariantCulture), measureValues.V.ToString());
+
+              if (operationDataFromDatabase != null)
+              {
+                operationId = operationDataFromDatabase.Id.ToString() ?? throw new InvalidOperationException();
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 5);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.RECETA_W", 1);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 6);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 10);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.PRESET_ESCR",
+                  (double)operationDataFromDatabase.ProgrammedVolume);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 10);
+              }
+              else
+              {
+                //TODO: Qué pasa si la operación no existe en la base de datos
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 56);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.DISPLAY", 1);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 28);
+                canStartOperation = false;
+              }
+            }
+
+            //Escucha el tag ESTATUS_LOTE_INST. En caso de llegar un 13 y estar ya en una operación 
+            if (measureValues.Id == "ASFALTO.UCL31.BANDERA.ESTATUS_LOTE_INST" && canStartOperation)
+            {
+              Console.WriteLine($"Debería ser 13: {measureValues.V}");
+              if (measureValues.V is 13 && canStartOperation)
+              {
+                var test = await GetDataRestDataFromUcl();
+
+                PostDataToDatabase(test, operationId);
+
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 7);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 56);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.DISPLAY", 1);
+                Thread.Sleep(1000);
+                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 28);
+                operacionLoteValue = 0;
+                canStartOperation = false;
+              }
               
-              await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 7);
-              Thread.Sleep(1000);
-              await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 56);
-              Thread.Sleep(1000);
-              await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.DISPLAY", 1);
-              Thread.Sleep(1000);
-              await PublishToUcl("ucl31_bandera/write","ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 28);
-              operacionLoteValue = 0;
-              canStartOperation = false;
+              //TODO: Qué pasa si llega otro estado. Por ejemplo paro de emergencia.
+              
             }
           }
-        }
 
         var msgTopic = e.ApplicationMessage.Topic;
         Console.WriteLine($"Received message on topic {msgTopic}");
@@ -116,7 +141,7 @@ namespace skview_kepware_influx_service.MqttFiles
       Console.WriteLine("MQTT client subscribed to topic.");
 
       Console.WriteLine("Press enter to exit.");
-      Console.ReadLine();
+      Console.ReadLine(); 
     }
     
     public async Task PublishToUcl(string topic, string tagName, double value)
@@ -141,7 +166,6 @@ namespace skview_kepware_influx_service.MqttFiles
       var applicationMessage = new MqttApplicationMessageBuilder()
         .WithTopic(topic)
         .WithPayload(mqttString)
-        // .WithPayload("[{\"id\": \"ASFALTO.UCL31.BANDERA.DISPLAY\",\"v\": 2}]")
         .Build();
 
       await mqttClient.PublishAsync(applicationMessage, CancellationToken.None);
@@ -151,7 +175,56 @@ namespace skview_kepware_influx_service.MqttFiles
       Console.WriteLine($"MQTT application message is published: {value}.");
     }
 
-    private async void GetDataRestDataFromUcl()
+    private async Task<OperationDataFromDatabase?> ValidateIfOperationExistsInDatabase(string operationNumber, string? tankTruckNumberPg)
+    {
+      var operationQueryObject = new BatchFillerOperationUpdateFromUclDto
+      {
+        OperationNumber = operationNumber,
+        TankTruckNumberPg = tankTruckNumberPg
+      };
+      
+      var jsonData = JsonConvert.SerializeObject(operationQueryObject);
+
+      // URL del endpoint
+      var apiUrl = "http://" + _configuration["MqttServerIp"] + ":5001/api/BatchFillerOperations/GetBatchFillerOperationIdAndProgrammedValueFromUcl";
+
+      // Crear una instancia de HttpClient (se puede reutilizar a lo largo de la aplicación)
+      using var httpClient = new HttpClient();
+      
+      
+
+      try
+      {
+        // Configurar el encabezado de la solicitud para indicar JSON
+        httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
+        httpClient.DefaultRequestHeaders.Add("ContentType", "application/json");
+
+        // Crear una solicitud POST con los datos JSON
+        var response = await httpClient.PostAsync(apiUrl, new StringContent(jsonData, System.Text.Encoding.UTF8, "application/json"));
+
+        // Verificar si la solicitud fue exitosa (código de estado 200-299)
+        if (response.IsSuccessStatusCode)
+        {
+          // Leer la respuesta
+          var responseBody = await response.Content.ReadAsStringAsync();
+          var responseObject = JsonConvert.DeserializeObject<List<OperationDataFromDatabase>>(responseBody);
+          return responseObject.Count != 1 ? null : responseObject[0];
+        }
+        else
+        {
+          //TODO: Poner que no existe el resultado
+          Console.WriteLine($"Error: {response.StatusCode}");
+          return null;
+        }
+      }
+      catch (HttpRequestException e)
+      {
+        Console.WriteLine($"Error en la solicitud HTTP: {e.Message}");
+        return null;
+      }
+    }
+
+    private async Task<BatchFillerOperationUpdateFromUclDto> GetDataRestDataFromUcl()
     {
       var idsList = new List<string>
       {
@@ -182,28 +255,6 @@ namespace skview_kepware_influx_service.MqttFiles
 
       //Connect to the server (kepserver) for retrieving the information
       var httpClient = new HttpClient();
-      var batchFillerOperationUpdated = new BatchFillerOperationUpdateFromUclDto
-      {
-        OperationNumber = "ooooo",
-        TankTruckNumberPg = "oooo",
-        OperationStatusId = new Guid("5EC42E4E-1FA7-4A4C-A918-0458DB1732F7"),
-        StartDateByUcl = DateTime.Now,
-        EndDateByUcl = DateTime.Now,
-        BatchNumber = 199,
-        Weight = 0,
-        Density = 0,
-        Temperature = 0,
-        Pressure = 0,
-        GrossVolume = 0,
-        NetVolume = 0,
-        BaseDensity = 0,
-        MeterFactor = 0,
-        KFactor = 0,
-        CTL = 0,
-        CPL = 0,
-        CCF = 0,
-        Flux = 0
-      };
 
       try
       {
@@ -332,7 +383,8 @@ namespace skview_kepware_influx_service.MqttFiles
           }
       
           Console.WriteLine(batchFillerOperationUpdate);
-          PostDataToDatabase(batchFillerOperationUpdate);
+          //PostDataToDatabase(batchFillerOperationUpdate);
+          return batchFillerOperationUpdate;
         }
         
       }
@@ -340,17 +392,20 @@ namespace skview_kepware_influx_service.MqttFiles
       {
         //TODO: Definir el estatus que se pondrá para controlar el estatus de fallo.
         Console.WriteLine(e.Message);
+        return null;
       }
+
+      return null;
     }
 
-    private static async void PostDataToDatabase(BatchFillerOperationUpdateFromUclDto test)
+    private async void PostDataToDatabase(BatchFillerOperationUpdateFromUclDto test, string operationIdToSend)
     {
       
       
       string jsonData = JsonConvert.SerializeObject(test);
 
       // URL del endpoint
-      string apiUrl = "http://localhost:5001/api/BatchFillerOperations/UpdateBatchFillerOperationOperationFromUcl/9A39372B-745E-45AB-83F0-A2DE1CF5CC94";
+      var apiUrl = "http://" + _configuration["MqttServerIp"] + $":5001/api/BatchFillerOperations/UpdateBatchFillerOperationOperationFromUcl/{operationIdToSend}";
 
       // Crear una instancia de HttpClient (se puede reutilizar a lo largo de la aplicación)
       using var httpClient = new HttpClient();

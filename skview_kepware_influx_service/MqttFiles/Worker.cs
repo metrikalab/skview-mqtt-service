@@ -3,8 +3,7 @@ namespace skview_kepware_influx_service.MqttFiles
   public class Worker : BackgroundService
   {
     private readonly ILogger<Worker> _logger;
-    private string _test1 = "cliente 1";
-    private iMqttConect _iMqttConnect;
+    private readonly iMqttConect _iMqttConnect;
 
     public Worker(ILogger<Worker> logger, iMqttConect iMqttConnect)
     {
@@ -14,10 +13,27 @@ namespace skview_kepware_influx_service.MqttFiles
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-      Console.WriteLine("thes");
-      _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-      //await Task.Delay(1000, stoppingToken);
-      await _iMqttConnect.StartOperation();
+      try
+      {
+        _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+        //await Task.Delay(1000, stoppingToken);
+        while (!stoppingToken.IsCancellationRequested)
+        {
+          await _iMqttConnect.StartOperation();
+        }
+      }
+      catch (OperationCanceledException)
+      {
+
+      }
+      catch (Exception ex)
+      {
+        _logger.LogError(ex, "{Message}", ex.Message);
+        Environment.Exit(1);
+
+      ;
+      }
+
     }
   }
 }

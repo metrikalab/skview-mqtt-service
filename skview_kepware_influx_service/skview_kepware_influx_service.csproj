@@ -10,6 +10,7 @@
     <ItemGroup>
         <PackageReference Include="InfluxData.Net" Version="8.0.1" />
         <PackageReference Include="InfluxDB.Client" Version="4.13.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
         <PackageReference Include="MQTTnet" Version="4.2.1.781" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
@@ -18,12 +19,28 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Remove="Repositories\**" />
+      <Content Remove="MqttFiles\Files\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Data\" />
-      <Folder Include="MqttFiles\Files\" />
-      <Folder Include="Repositories\" />
+      <Folder Include="Filters\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Repositories\**" />
+      <Compile Remove="MqttFiles\Files\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Repositories\**" />
+      <EmbeddedResource Remove="MqttFiles\Files\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Repositories\**" />
+      <None Remove="MqttFiles\Files\**" />
     </ItemGroup>
 
 </Project>

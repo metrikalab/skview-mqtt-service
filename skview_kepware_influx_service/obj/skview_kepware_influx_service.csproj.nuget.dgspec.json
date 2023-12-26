@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/skview_kepware_influx_service.csproj": {}
+    "C:\\Users\\sk32\\Documents\\Imimex\\SKVIEW\\skview-mqtt-service\\skview_kepware_influx_service\\skview_kepware_influx_service.csproj": {}
   },
   "projects": {
-    "/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/skview_kepware_influx_service.csproj": {
+    "C:\\Users\\sk32\\Documents\\Imimex\\SKVIEW\\skview-mqtt-service\\skview_kepware_influx_service\\skview_kepware_influx_service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/skview_kepware_influx_service.csproj",
+        "projectUniqueName": "C:\\Users\\sk32\\Documents\\Imimex\\SKVIEW\\skview-mqtt-service\\skview_kepware_influx_service\\skview_kepware_influx_service.csproj",
         "projectName": "skview_kepware_influx_service",
-        "projectPath": "/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/skview_kepware_influx_service.csproj",
-        "packagesPath": "/Users/cmnb32/.nuget/packages/",
-        "outputPath": "/Users/cmnb32/Documents/Imimex/skView/Codigo/skview_kepware_influx_service/skview_kepware_influx_service/obj/",
+        "projectPath": "C:\\Users\\sk32\\Documents\\Imimex\\SKVIEW\\skview-mqtt-service\\skview_kepware_influx_service\\skview_kepware_influx_service.csproj",
+        "packagesPath": "C:\\Users\\sk32\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sk32\\Documents\\Imimex\\SKVIEW\\skview-mqtt-service\\skview_kepware_influx_service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/cmnb32/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sk32\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +52,10 @@
               "target": "Package",
               "version": "[4.2.1.781, )"
             },
+            "Microsoft.Extensions.Hosting.WindowsServices": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -74,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
