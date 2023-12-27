@@ -84,8 +84,8 @@ namespace skview_kepware_influx_service.MqttFiles
               else
               {
                 //TODO: Qué pasa si la operación no existe en la base de datos
-                await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 56);
-                Thread.Sleep(1000);
+                // await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 56);
+                // Thread.Sleep(1000);
                 await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.DISPLAY", 1);
                 Thread.Sleep(1000);
                 await PublishToUcl("ucl31_bandera/write", "ASFALTO.UCL31.BANDERA.BANDERACOMANDOS", 28);
@@ -288,6 +288,7 @@ namespace skview_kepware_influx_service.MqttFiles
             OperationNumber = "teeeestUCL",
             TankTruckNumberPg = "UCLTesttt",
             OperationStatusId = new Guid("5EC42E4E-1FA7-4A4C-A918-0458DB1732F7"),
+            FillerId = new Guid("3841FEDA-905A-49A0-9649-62D5D477FE5C"),
             StartDateByUcl = DateTime.Now,
             EndDateByUcl = DateTime.Now,
             BatchNumber = 199,

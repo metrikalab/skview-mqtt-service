@@ -5,6 +5,7 @@
     public string? OperationNumber { get; set; }
     public string? TankTruckNumberPg { get; set; }
     public Guid? OperationStatusId { get; set; }
+    public Guid? FillerId { get; set; }
     public DateTime? StartDateByUcl { get; set; }
     public DateTime? EndDateByUcl { get; set; }
     public int? BatchNumber { get; set; }
