@@ -369,14 +369,16 @@ namespace skview_kepware_influx_service.MqttFiles
             {
               batchFillerOperationUpdate.Flux = pair.Value;
             }
-            // else if (pair.Key == "ASFALTO.UCL31.LOTE.FECHA_INI_LOTE")
-            // {
-            //   batchFillerOperationUpdate.StartDateByUcl = pair.Value;
-            // }
-            // else if (pair.Key == "ASFALTO.UCL31.LOTE.FECHA_FIN_LOTE")
-            // {
-            //   batchFillerOperationUpdate.EndDateByUcl = pair.Value;
-            // }
+            else if (pair.Key == "ASFALTO.UCL31.LOTE.FECHA_INI_LOTE")
+            {
+              var initialDateByUcl = DateTimeOffset.FromUnixTimeSeconds((long)pair.Value);
+              batchFillerOperationUpdate.StartDateByUcl = initialDateByUcl.DateTime;
+            }
+            else if (pair.Key == "ASFALTO.UCL31.LOTE.FECHA_FIN_LOTE")
+            {
+              var finalDateByUcl = DateTimeOffset.FromUnixTimeSeconds((long)pair.Value);
+              batchFillerOperationUpdate.EndDateByUcl = finalDateByUcl.DateTime;
+            }
             else if (pair.Key == "ASFALTO.UCL31.LOTE.AUTOTANQUE_LOTE")
             {
               batchFillerOperationUpdate.TankTruckNumberPg = pair.Value?.ToString();
